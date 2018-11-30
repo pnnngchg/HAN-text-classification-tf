@@ -3,11 +3,11 @@ import numpy as np
 
 
 def read_dataset():
-    with open('yelp_data', 'rb') as f:
+    with open('/home/pczero/data/han_data/yelp_data', 'rb') as f:
         data_x, data_y = pickle.load(f)
         length = len(data_x)
-        train_x, dev_x = data_x[:int(length*0.9)], data_x[int(length*0.9)+1 :]
-        train_y, dev_y = data_y[:int(length*0.9)], data_y[int(length*0.9)+1 :]
+        train_x, dev_x = data_x[:int(length*0.9)], data_x[int(length*0.9)+1:]
+        train_y, dev_y = data_y[:int(length*0.9)], data_y[int(length*0.9)+1:]
         return train_x, train_y, dev_x, dev_y
 
 def batch(inputs):

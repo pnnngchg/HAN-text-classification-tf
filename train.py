@@ -18,7 +18,7 @@ tf.flags.DEFINE_integer("checkpoint_every", 100, "Save model after this many ste
 tf.flags.DEFINE_integer("num_checkpoints", 5, "Number of checkpoints to store (default: 5)")
 tf.flags.DEFINE_integer("evaluate_every", 100, "evaluate every this many batches")
 tf.flags.DEFINE_float("learning_rate", 0.01, "learning rate")
-tf.flags.DEFINE_float("grad_clip", 5, "grad clip to prevent gradient explode")
+tf.flags.DEFINE_float("grad_clip", 5, "grad clip to prevent gradient explode")  # 防止梯度爆炸
 
 FLAGS = tf.flags.FLAGS
 
