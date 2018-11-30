@@ -1,4 +1,9 @@
 #coding=utf-8
+
+"""
+hoohaa
+"""
+
 import tensorflow as tf
 import model
 import time
